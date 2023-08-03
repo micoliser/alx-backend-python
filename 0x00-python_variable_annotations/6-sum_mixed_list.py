@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
-""" This module contains a type-annotated function sum_mixed_list """
+""" Type-annotated suum_mixed_list function """
 from typing import List, Union
 
 
-def sum_mixed_list(mxd_list: List[Union[float, int]]) -> float:
-    """ sums a list and returns the result """
+def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
+    """ returns the sum of a list as float"""
 
-    total = 0
-    for num in mxd_list:
-        total += num
-    return total
+    return float(sum(mxd_lst))
